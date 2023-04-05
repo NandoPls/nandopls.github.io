@@ -1,0 +1,133 @@
+/* Estilos para el cuerpo de la página */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* Estilos para el contenedor del encabezado */
+    .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    font-size: xx-large;
+    padding: 1em;
+    }
+    
+    /* Estilos para el logo */
+    .logo {
+    margin-left: 20px;
+    width: 250px;
+    }
+    
+    .logo img {
+    height: 500px;
+    }
+    
+    /* Estilos para la barra de navegación */
+    nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    nav ul li {
+    margin-left: 1em;
+    
+    }
+    
+    nav ul li:first-child {
+    margin-left: 0;
+    }
+    
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+    }
+    
+    /* Estilos para las secciones de noticias */
+    section {
+    margin: 1em;
+    }
+    
+    section h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    }
+    
+    section article {
+    border: 1px solid #ccc;
+    margin-bottom: 2em;
+    padding: 1em;
+    }
+    
+    section article h3 {
+    font-size: 1.2em;
+    }
+    
+    section article h6 {
+    color: #666;
+    font-size: 0.8em;
+    }
+    
+    section article p {
+    margin-bottom: 1em;
+    }
+    
+    section article video {
+    margin: 1em 0;
+    }
+    
+    section article audio {
+    margin-bottom: 1em;
+    }
+    
+    /* Estilos para los enlaces */
+    a {
+    color: #333;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
+    
+    button {
+    background-color: #FECB2E;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-5px);
+    }
+    
+    section h2:hover {
+    color: #FECB2E;
+    transform: translateY(-5px);
+    }
+    
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+    color: #F1C40F;
+    text-shadow: 2px 2px #333;
+    }
+    
+    .header-container h1 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
