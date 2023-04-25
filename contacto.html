@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!--Head de la web-->
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Periodico El Faro</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-1O6reYU6OjU6ULW/gz8Fv6Oe1aM4A4jih1fQgE6s3qjKlCfbO71qlx8pCmlz0jTbT1Rw4mW4lPRm4b+FrcU+wg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="scripts.js"></script>  
+      <!-- Bootstrap JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <!--CSS-->
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <!--Head de la web-->
+   <body>
+      <!-- HEADER DE LA WEB-->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+               <div class="navbar-brand d-flex align-items-center">
+                  <div class="me-auto"></div>
+                  <a href="index.html"><img src="logo.png" width="150" alt="Logo de Periodico El Faro" style="min-height: 50px;"></a>
+               </div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="deportes.html">Deporte</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="negocios.html">Negocios</a>
+                     </li>
+                  </ul>
+                  <div class="navbar-title mx-auto">Periodico el Faro</div>
+                  <div class="ms-auto"></div>
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!--SideBar-->
+      <div class="card my-3">
+         <div class="card-body">
+            <h5 class="card-title">Urgente: Gabriel Boric anuncia la creación de la Empresa Nacional del Litio</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Categoría: Economia Nacional</h6>
+            <p class="card-text">Chile tiene las mayores reservas de litio del mundo, un mineral que, al estar en las baterías de almacenamiento de energía, de autos y buses eléctricos, resulta clave en la lucha contra la crisis climática y una oportunidad de 
+               crecimiento económico que difícilmente se vuelva a repetir en el corto plazo”, explicó el mandatario en cadena nacional desde el Palacio de La Moneda...
+            </p>
+            <a class="btn btn-primary" id="hideText_btn_1" href="urgente.html" role="button">Leer noticia completa</a>
+         </div>
+      </div>
+      <main class="container my-5">
+         <h2 class="my-12">Contacto</h2>
+         <br>
+         <section class="row">
+            <div class="col-md-12">
+               <div class="card mb-12">
+                  <div class="card-body">
+                     <p class="card-text">Por favor si desea contactarse con "periodico el faro", favor llenar formulario que puede encontrar a continuación: </p>
+                     <h3 class="card-title"></h3>
+                     <form action="javascript:void(0)" method="POST" id="formulario">
+                        <div class="form-group">
+                           <label for="nombre">Nombre:</label>
+                           <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                           <label for="email">Correo electrónico:</label>
+                           <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                           <label for="mensaje">Mensaje:</label>
+                           <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <script>
+            console.log('Script cargado correctamente.');
+            
+            const formulario = document.querySelector('#formulario');
+            
+            if (formulario) {
+              formulario.addEventListener('submit', function(event) {
+                event.preventDefault();
+                console.log('Evento submit capturado.');
+                alert('Mensaje enviado.');
+              });
+            }
+         </script>
+      </main>
+   </body>
+   <!--Footer-->
+   <footer class="bg-dark text-light py-3">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h5 class="mb-3">Enlaces útiles</h5>
+               <ul class="list-unstyled">
+                  <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a></li>
+                  <li><a href="https://twitter.com/hom"><i class="fab fa-twitter"></i>Twitter</a></li>
+                  <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook"></i>Facebook</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-up"></i>  Subir</a></li>
+               </ul>
+            </div>
+            <div class="col-md-6">
+               <h5 class="mb-3">Contacto</h5>
+               <p>123 Calle Principal, Ciudad</p>
+               <p>Correo: info@periodicoelfaro.com</p>
+               <p>Teléfono: (123) 456-7890</p>
+            </div>
+         </div>
+      </div>
+      <div class="text-center mt-4">
+         <p>&copy; 2023 Periodico El Faro</p>
+      </div>
+   </footer>
+   </footer>

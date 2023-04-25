@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--Head de la web-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Periodico El Faro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-1O6reYU6OjU6ULW/gz8Fv6Oe1aM4A4jih1fQgE6s3qjKlCfbO71qlx8pCmlz0jTbT1Rw4mW4lPRm4b+FrcU+wg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="scripts.js"></script>  
+    <!-- Bootstrap JavaScript -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!--Head de la web-->
+  <body>
+    <!-- HEADER DE LA WEB-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="navbar-brand d-flex align-items-center">
+            <div class="me-auto"></div>
+            <a href="index.html"><img src="logo.png" width="150" alt="Logo de Periodico El Faro" style="min-height: 50px;"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="deportes.html">Deporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="negocios.html">Negocios</a>
+              </li> 
+            </ul>
+    
+            <div class="navbar-title mx-auto">Periodico el Faro</div>
+            <div class="ms-auto"></div>
+    
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    
+    <!--SideBar-->
+    <div class="card my-3">
+      <div class="card-body">
+        <h5 class="card-title">Urgente: Gabriel Boric anuncia la creación de la Empresa Nacional del Litio</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Categoría: Economia Nacional</h6>
+        <p class="card-text">Chile tiene las mayores reservas de litio del mundo, un mineral que, al estar en las baterías de almacenamiento de energía, de autos y buses eléctricos, resulta clave en la lucha contra la crisis climática y una oportunidad de 
+          crecimiento económico que difícilmente se vuelva a repetir en el corto plazo”, explicó el mandatario en cadena nacional desde el Palacio de La Moneda...</p>
+        <a class="btn btn-primary" id="hideText_btn_1" href="urgente.html" role="button">Leer noticia completa</a>
+      </div>
+    </div>
+
+
+     
+      <main class="container my-5">
+        <!--noticias superiores-->
+        <h2 class="mb-4">Noticias generales</h2>
+        <div class="row">
+           <div class="col-md-4 mb-4">
+              <div class="card">
+                 <img src="img/index1.png" class="card-img-top" alt="Elon Musk,">
+                 <div class="card-body">
+                    <h5 class="card-title">Elon Musk aborda anuncio de Boric sobre la Política Nacional del Litio: “El mineral es muy común, lo que importa es la capacidad de refinación”</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Categoría: Internacionales</h6>
+                    <p class="card-text" id="descripcion-noticia">El jueves, a través de una cadena nacional, el Jefe de Estado anunció la política nacional para este metal alcalino, el que incluye, entre varios puntos, la creación de una Empresa Nacional del Litio, la que participará de todo el ciclo productivo. Otro de los puntos anunciados fue que la exploración, explotación y agregación de valor, será en base a una colaboración público-privada...</p>
+                    <a class="btn btn-primary" id="hideText_btn_1" href="elonmusknotice.html" role="button">Leer Noticia completa</a>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-4 mb-4">
+              <div class="card">
+                 <img src="img/index2.png" class="card-img-top" alt="Alberto Fernandez">
+                 <div class="card-body">
+                    <h5 class="card-title">El peronismo busca candidato en turbulento año de elecciones: sus dos figuras dieron paso al costado</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Categoría: Internacionales</h6>
+                    <p class="card-text" id="descripcion-noticia">Luego que Alberto Fernández y Cristina Fernández de Kirchner anunciaran que no se presentarán a las elecciones 
+                       presidenciales de Argentina, el peronismo busca con urgencia un candidato para revalidad el triunfo de 2019. El gobernador de la Provincia de Buenos Aires
+                       y el actual ministro de Economía son parte de los nombres que suenan para batallar por la Casa Rosada. La palabra más repetida durante las últimas horas
+                       entre las filas peronistas es “orden”. Una reorganización necesaria para un movimiento político que enfrenta este octubre elecciones presidenciales en 
+                       Argentina y que, por el momento, no tiene ningún aspirante fuerte que suene para intentar revalidar la victoria obtenida en 2019 por el Frente de Todos...
+                    </p>
+                    <a class="btn btn-primary" id="hideText_btn_1" href="albertofernandez.html" role="button">Leer Noticia completa</a>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-4 mb-4">
+              <div class="card">
+                 <img src="img/index3.png" class="card-img-top" alt="Pelicula chilena 1976">
+                 <div class="card-body">
+                    <h5 class="card-title">Película chilena 1976 y serie dirigida por Andrés Wood se llevan galardones en los Premios Platino</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Categoría: Peliculas nacionales</h6>
+                    <p class="card-text" id="descripcion-noticia">a película 1976 y la serie Noticia de un secuestro triunfaron en los Premios Platino. 
+                       La primera es una cinta dirigida por Manuela Martelli y ganó el galardón a "Mejor Ópera Prima de Ficción Iberoamericana". En tanto,
+                       la realización del chileno Andrés Wood se quedó con cuatro de las seis nominación que tenía.
+                    </p>
+                    <a class="btn btn-primary" id="hideText_btn_1" href="peliculanacional.html" role="button">Leer Noticia completa</a>
+                 </div>
+              </div>
+           </div>
+        </div>
+         <!--noticias principales-->
+      <h2 class="my-12">Noticias de deporte</h2>
+      <br>
+      <section class="row">
+        <div class="col-md-12">
+          <div class="card mb-12">
+            <div class="card-body">  
+              <h3 class="card-title">Unión Española tumba a Coquimbo Unido y consigue valioso triunfo por el Campeonato Nacional</h3>
+              <br>
+              <h6 class="card-subtitle mb-2 text-muted">categoría: Deportes</h6>      
+              <img src="img/deportes1.png" height="750" width="25" class="card-img-top" alt="Union española, coquimbo">    
+              <p class="card-text"><p><strong>Unión Española</strong> se hizo fuerte como local y, con golpes en los momentos justos, derribó a <em>Coquimbo</em> por la fecha 11 del <em>Campeonato Nacional 2023</em>.
+              >Resultado que deja a los hispanos en el séptimo puesto de la tabla, con 15 unidades. En tanto, los dirigidos por Fernando Díaz se quedaron con 19 puntos en el quinto lugar.
+              <em>Colo Colo</em> superó a <em>Palestino</em> en un Monumental sin público y recupera terreno en el <em>Campeonato Nacional</em>
+              El primer tiempo estuvo marcado por el dominio de los locales, ante un elenco ‘pirata’ que apostó por la velocidad de sus jugadores para hacer daño con el contragolpe.</p>
+              <p>Sin embargo, la apertura de la cuenta llegaría recién a los 49 minutos y fue obra de un exjugador de Coquimbo: <strong>Leandro Garate</strong>.
+              El espigado delantero conectó un centro desde la izquierda de Ignacio Núñez y, con golpe de cabeza, batió la resistencia del ‘Mono’ Sánchez.
+              <strong>Bryan Carvallo</strong> puso el 2-0 final para los de <em>Ronald Fuentes</em> en el 90+6′, tras concretar un veloz contragolpe que pilló mal parada a la zaga de los ‘piratas’.
+              Por la fecha 12 del <em>Campeonato Nacional</em>, <strong>Unión Española</strong> deberá visitar a <em>O’Higgins</em> en Rancagua, este 30 domingo 30 de abril. El mismo día, <em>Coquimbo</em> volverá a ser forastero ante <em>Deportes Copiapó</em>.</p>
+              <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Pitazo final en Santa Laura<br>Lo ganamooooooos 2x0 a Coquimbo Unido 👏👏👏👏A celebrar Hinchas Hispanos 🔴🟡 Este triunfo es para ustedes 🇪🇦 <a href="https://t.co/6R5IBIrXPQ">pic.twitter.com/6R5IBIrXPQ</a></p>&mdash; Unión Española (@UEoficial) <a href="https://twitter.com/UEoficial/status/1650320243330252800?ref_src=twsrc%5Etfw">April 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card mb-12">
+            <div class="card-body">
+              <h3 class="card-title">Con un Monumental sin hinchas: Colo Colo recibe a Palestino con el deber de ganar en el plano local</h3>
+              <br>
+              <h6 class="card-subtitle mb-2 text-muted">categoría: Deportes</h6>
+              <p class="card-text"><p>El domingo 23 de abril se jugó el partido entre <strong>Colo Colo</strong> y <strong>Palestino</strong> en el <strong>Estadio Monumental</strong>, en la undécima fecha del torneo chileno. Este fue el primer partido del 'Cacique' a puertas cerradas después de ser castigado por los incidentes en el Superclásico contra Universidad de Chile. Colo Colo buscaba obtener los tres puntos para escalar en la clasificación y quedarse a cuatro unidades del líder Huachipato. Por ahora, el equipo de Gustavo Quinteros se encuentra en el séptimo lugar con 15 puntos.</p>
+              <img src="img/indexgeneral3.png" class="card-img-top" alt="colo colo vs palestino">     
+              <p>En el partido anterior, Colo Colo empató sin goles ante Universidad Católica en el Santa Laura. El equipo local tuvo las bajas confirmadas de Leo Gil y Matías de los Santos. Por otro lado, Palestino necesitaba sumar de a tres para recuperar la confianza después de haber caído goleado por Cobresal en La Cisterna. Ambos equipos llegaron con la moral alta después de celebrar victorias en el plano internacional frente a rivales venezolanos.</p>
+              <img src="img/indexgeneral4.png" class="card-img-top" alt="colocolo">     
+              <p>El partido terminó empatado sin goles. Colo Colo formó con Brayan Cortés; Maximiliano Falcón, Ramiro González, Daniel Gutiérrez; Jeyson Rojas, César Fuentes, Esteban Pavez, Agustín Bouzat; Marcos Bolados y Damián Pizarro. Palestino saltó al campo con César Rigamonti; Benjamín Rojas, Fernando Meza, Cristián Suárez; Bryan Carrasco, Ariel Martínez, Agustín Farías, Fernando Cornejo, Jonathan Benítez; Misael Dávila y Maximiliano Salas.</p></p>
+              <blockquote class="twitter-tweet"><p lang="es" dir="ltr">𝐂𝐈𝐓𝐀𝐂𝐈𝐎́𝐍 | Junto a <a href="https://twitter.com/CoolbetChile?ref_src=twsrc%5Etfw">@CoolbetChile</a> te dejamos la convocatoria de Gustavo Quinteros para enfrentar a Palestino este domingo. <a href="https://twitter.com/hashtag/VamosColoColo?src=hash&amp;ref_src=twsrc%5Etfw">#VamosColoColo</a> | <a href="https://twitter.com/hashtag/VamosPorTodo?src=hash&amp;ref_src=twsrc%5Etfw">#VamosPorTodo</a> <a href="https://t.co/niwNUeBVw3">pic.twitter.com/niwNUeBVw3</a></p>&mdash; Colo-Colo (@ColoColo) <a href="https://twitter.com/ColoColo/status/1649883197293973504?ref_src=twsrc%5Etfw">April 22, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-md-12">
+          <div class="card mb-12">
+            <div class="card-body">
+              <h3 class="card-title">El secreto de Yerko Urra para ser el arquero goleador de Temuco: "No pensé que me quedaría la pelota"</h3>
+              <h6 class="card-subtitle mb-2 text-muted">categoría: Deportes</h6>
+              <img src="img/deportes2.png" width="500" height="500" class="card-img-top" alt="El secreto de yerko urra">    
+              <p class="card-text">aca va un texto</p>
+              <p><strong>El arquero Yerko Urra anotó su primer gol en el profesionalismo</strong>, dándole el empate a Deportes Temuco ante San Marcos de Arica en la Primera B.</p>
+                    <p>Yerko Urra, arquero de Deportes Temuco, fue el héroe de los ‘albiverdes’ en el empate de este domingo ante San Marcos de Arica por la Primera B 2023.
+                        En los descuentos de la segunda mitad, el guardametas subió al área de los nortinos cuando su equipo caía 1-0 y, con una espectacular <em>‘palomita’</em>, marcó de cabeza el 1-1 definitivo.
+                        En diálogo con BioBioChile, el responsable de que Temuco se quedara con un punto ante los nortinos habló de su tanto, el primero que marca en su carrera durante un partido profesional -había anotado en una tanda de penales-.
+                        “Siempre me ha gustado jugar de nueve. En los futbolitos, cuando jugamos con excolegas. Siempre me la tiran de que juegue de delantero, pero ya es un poco tarde”, contó Urra, esbozando una sonrisa.</p>
+
+                    <p>El portero detalló que le pidió autorización al técnico Juan José Ribera para ir al área rival en la última jugada del partido.
+                    “Fui con confianza de hacer algo, por último molestar. Nunca pensé que me quedaría la pelota de frente para convertir. Fue muy lindo, había como 10 mil personas. Lo único malo fue que dejamos escapar 2 puntos, pero Arica jugó muy bien”, sostuvo Urra.
+                    Por último, Yerko contó a quiénes les dedicó su primer tanto en el fútbol profesional: “A mis hijos Bruno y Simón, mi pareja María. Y justo para mi papá y mi hermana que hoy estaban en el estadio”.
+                    Vale señalar que, con el empate, Deportes Temuco quedó tercero en la tabla de la Primera B con 16 puntos, a 3 de los dos líderes del torneo (San Luis de Quillota y Deportes La Serena).</p>
+                    <h6><strong>Así fue el golazo de Yerko Urra para Deportes Temuco:</strong><h6>
+                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Yerko Urra, ARQUERO de Deportes Temuco marcó de cabeza el empate agónico ante San Marcos de Arica en el minuto 98&#39;<br><br>VIVA EL ASCENSO 🇨🇱 <a href="https://t.co/PhQT6gXpvp">pic.twitter.com/PhQT6gXpvp</a></p>&mdash; Momentos Random del Fútbol Chileno (@randomfutchile) <a href="https://twitter.com/randomfutchile/status/1650209805854822400?ref_src=twsrc%5Etfw">April 23, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/tv/CrZVmJov6pc/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/tv/CrZVmJov6pc/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/tv/CrZVmJov6pc/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de TNT Sports Chile (@tntsportscl)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+                 </div>
+          </div>
+        </div>
+              <div class="col-md-12">
+          <div class="card mb-12">
+            <div class="card-body">
+              <h3 class="card-title">A la espera de informe final: clásico entre Universidad de Chile y Católica se jugaría en Concepción</h3>
+              <h6 class="card-subtitle mb-2 text-muted">categoría: Deportes</h6>
+              <p class="card-text"><p><strong>Unión Española</strong> se hizo fuerte como local y, con golpes en los momentos justos, derribó a Coquimbo por la fecha 11 del Campeonato Nacional 2023.
+              Luego de volteretas y una serie de problemas con el <strong>Clásico Universitario</strong>, <em>La U</em> y la <em>UC</em> se medirán finalmente el domingo 30 de abril en el Estadio ‘Ester Roa Rebolledo’, en Concepción.
+              Ya habría recinto confirmado para el <strong>Clásico Universitario</strong> del domingo 30 de abril. Luego de volteretas y una serie de problemas, <em>La U</em> y la <em>UC</em> se medirán finalmente en el Estadio ‘Ester Roa Rebolledo’, en Concepción.
+              >De acuerdo a información de <strong>BioBioChile</strong>, el cruce en Collao tendrá un aforo máximo de 21 mil espectadores y no contará con hinchas visitantes.
+              <em>La U</em> se encumbra en la tabla: azules vencen a Everton y celebraron en Viña por el Campeonato Nacional
+                Ante la falta de estadios en buen estado en la Región Metropolitana, y sobre todo para estos partidos de mayor tradición, el ’Romántico Viajero’ resolvió ser local en suelo penquista contra los cruzados.</p>
+                <img src="img/deportes3.png" class="card-img-top" alt="clasico universidad de chile y catolica">     
+                <p>En primera instancia, el cotejo excluyente por la duodécima jornada de la serie de oro del balompié nacional quedó pactado para las 15:00 horas del último día del presente mes.
+                  Pese a lo anterior, resta conocer el informe final de Carabineros para confirmar los detalles del encuentro entre los elencos estudiantiles.
+                 Cabe destacar que ambos elencos ya se midieron en el mismo recinto en 2016 por la Supercopa. Esa vez festejó el elenco de la franja.
+              <em>La UC</em> pierde una buena opción de llegar a la cima al caer en opaca presentación ante O’Higgins
+              Un duelo que asoma como clave en la lucha por el liderato del torneo. Los azules son sublíderes con 21 unidades, a uno del puntero Huachipato, mientras que la UC se ubica en la tercera plaza con 19 positivos.</p>
+              <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Parte de lo que periódicamente nuestros equipos realizan en el césped para soportar la carga de partidos que tenemos. <a href="https://t.co/oRKbdfD2Bl">pic.twitter.com/oRKbdfD2Bl</a></p>&mdash; Estadio Ester Roa (@EsterRoaoficial) <a href="https://twitter.com/EsterRoaoficial/status/1648707238066901001?ref_src=twsrc%5Etfw">April 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+      <!--Footer-->
+      <footer class="bg-dark text-light py-3">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="mb-3">Enlaces útiles</h5>
+              <ul class="list-unstyled">
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="https://twitter.com/hom"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fas fa-arrow-up"></i>  Subir</a></li>
+              </ul>
+              
+            </div>
+            <div class="col-md-6">
+              <h5 class="mb-3">Contacto</h5>
+              <p>123 Calle Principal, Ciudad</p>
+              <p>Correo: info@periodicoelfaro.com</p>
+              <p>Teléfono: (123) 456-7890</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>&copy; 2023 Periodico El Faro</p>
+        </div>
+      </footer>
+    </footer>
+    
