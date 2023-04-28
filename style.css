@@ -74,7 +74,6 @@ header {
 }
 
 /* Estilos para el video y el audio */
-iframe,
 audio {
   margin-top: 1rem;
   margin-bottom: 1rem;
